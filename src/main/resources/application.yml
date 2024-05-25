@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: expensetracker
+  
+  # PostgreSQL configuration
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: test
+    password: test123
+
+  # Disable database auto configuration (remove later)
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
